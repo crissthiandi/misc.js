@@ -1,11 +1,11 @@
 This repo contains miscellaneous tools and utilities written in JavaScript. They
 are published as an NPM package
-[`@xiee@utils`](https://www.npmjs.com/package/@xiee/utils). You can load them
+[`@xiee/utils`](https://www.npmjs.com/package/@xiee/utils). You can load them
 via [jsdelivr.com](https://www.jsdelivr.com), e.g.,
 
 ``` html
-<script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/faq.min.js" async></script>
-<link href="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/css/faq.min.css" rel="stylesheet"></link>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/faq.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/@xiee/utils/css/faq.min.css" rel="stylesheet"></link>
 ```
 
 See the full documentation at <https://yihui.org/en/2018/11/md-js-tricks/>.
@@ -45,7 +45,8 @@ top-right to expand or collapse all answers. Each FAQ item has an anchor (shown
 as the `#` symbol at the end on mouseover) that provides the link to the
 specific question.
 
-Note that you will need to load `faq.css` accordingly.
+Note that you will need to load `faq.css` accordingly. See [a more detailed
+introduction here](https://yihui.org/en/2021/10/faq-list/).
 
 ## fix-footnote.js
 
@@ -78,4 +79,3 @@ class, so that highlight.js will not try to syntax highlight the code in it.
 
 Right-align a `<blockquote>` footer if the footer is a `<p>` that starts with
 the em-dash.
-
